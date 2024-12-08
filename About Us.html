@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+    .navbar {
+    height: 50px;
+    background-color: #0C0A0A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+    }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #1a1818;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #e3e0e0;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-50px);
+            box-shadow: 40px 32px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #f7eded;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #000;
+            width: 50px;
+            margin: 10px auto;
+            transition: width 0.4s ease;
+        }
+
+        h2:hover::after {
+            width: 100px;
+        }
+
+        .img
+        {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #ccc;
+        }
+        .team-member {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 80px;
+            box-shadow: 90px 40px 65px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-30px);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h3 {
+            margin-bottom: 10px;
+            color: #000;
+            position: relative;
+        }
+
+        .team-member h3::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background: #000;
+            width: 50px;
+            margin-top: 5px;
+        }
+
+        .team-member p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">7 Wonders</div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+            <li><a href="Contact Us.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+            <li><a href="About Us.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>About Us</h1>
+        <h3>Welcome to our project on the Seven Wonders of the World, where we explore the history and significance of these remarkable landmarks. Join us as we uncover the stories and cultural heritage that make each wonder truly extraordinary.</h3>
+
+        <center><h1>Our Team</h1></center>
+        <div class="team-member">
+            <img class="img" src="Images/FAYU.jpg" alt="FAYEZ">
+            <h3>Fayez Kaladia</h3>
+            <p><strong>Role:</strong> Project Head & Supervisor</p>
+            <p>Fayez, as the head of this team,spearheaded the coding efforts for this project, ensuring a seamless integration of design and functionality.His commitment to excellence has driven our exploration of the Seven Wonders of the World</p>
+        </div>
+
+        <div class="team-member">
+            <img class="img" src="Images/Me.jpg" alt="RAAFE">
+            <h3>Raafe Gazdar</h3>
+            <p><strong>Role:</strong> Styling and Content Design</p>
+            <p>Raafe, throughout this project, handled the styling and design of our project content and made it all work seamlessly. His creative vision ensured that our presentation is both engaging and visually appealing for our target audience .</p>
+        </div>
+
+        <div class="team-member">
+            <img class="img" src="Images/AREE.jpg" alt="AREEB">
+            <h3>Areeb Ansari</h3>
+            <p><strong>Role:</strong> Project Scheduler</p>
+            <p> Areeb, the man who managed the project timeline and kept everyone updated on our progress and kept a check on the project status throughout the journey making it possible to complete the project in the given time </p>.</p>
+        </div>
+        <p>Teamwork in a project on the Seven Wonders of the World fosters collaboration and creativity, allowing diverse ideas to flourish. By combining individual strengths, we wereable to present these remarkable achievements in human history.</p>
+
+        <h3>We hope you enjoy our exploration of the Seven Wonders of the World!</h3>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>About Us</h2>
+                <p>Explore the magnificent 7 Wonders of the Modern World and uncover their timeless beauty and history.</p>
+                <p>Join our journey and stay updated with our latest news and updates.</p>
+            </div>
+
+            <div class="footer-links">
+               <center><h2>Quick Links</h2></center>
+                <ul>
+                    <center>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    </center>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@7wonders.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Mumbai Central , Mumbai 08</p>
+                <div class="social-icons">
+                    <a href="https://x.com/tajmahal"><i class="fa-brands fa-twitter"> Twitter</a></i>
+                    <a href="https://www.instagram.com/tajmahalindiaofficial/?hl=en"><i class="fa-brands fa-instagram"> Instagram</a></i>
+                    <a href="https://www.youtube.com/watch?v=mJCEVIiuiPc"><i class="fa-brands fa-youtube"> Youtube</a></i>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h2>Shortcuts</h2>
+                <p> <a href="taj.html"><i class="fa-solid fa-arrow-right"></i>TAJ MAHAL</a></p>
+                <p> <a href="colosseum.html"><i class="fa-solid fa-arrow-right"></i>COLOSSEUM</a></p>
+                <p> <a href="gwc.html"><i class="fa-solid fa-arrow-right"></i>GREAT WALL OF CHINA</a></p>
+                <p> <a href="petra.html"><i class="fa-solid fa-arrow-right"></i>PETRA JORDAN</a></p>
+                <p> <a href="christ.html"><i class="fa-solid fa-arrow-right"></i>CHRIST THE REDEEMER</a></p>
+                <p> <a href="machupicchu.html"><i class="fa-solid fa-arrow-right"></i>MACHU PICCHU</a></p>
+                <p> <a href="chichen itza.html"><i class="fa-solid fa-arrow-right"></i>CHICHEN ITZA</a></p>
+            </div>
+        </div><hr>
+
+        <div class="footer-bottom">
+          <center> <p>&copy; 2024 7 Wonders. All Rights Reserved.</p></center>
+        </div>
+    </footer>
+</body>
+</html>

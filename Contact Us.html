@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>   
+    .navbar {
+    height: 83px;
+    background-color: #0C0A0A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 40px;
+            box-shadow: 0px 4px 20px rgba(19, 16, 16, 0.2);
+            width: 100%;
+            max-width: 500px;
+            margin: 40px auto;
+            transition: transform 0.3s;
+        
+        }
+
+        .container:hover {
+            transform: scale(1.07);
+        }
+
+        h1 {
+            text-align: center;
+            color: #34495e;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            font-size: 50px;
+        
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .contact-form label {
+            font-size: 16px;
+            color: #34495e;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea, 
+        .contact-form select {
+            width: 100%;
+            padding: 10px 15px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact-form input:focus, 
+        .contact-form textarea:focus, 
+        .contact-form select:focus {
+            border-color: #3498db;
+            box-shadow: 20px 10px 10px rgba(52, 152, 219, 0.2);
+        }
+
+        .contact-form textarea {
+            resize: none;
+        }
+
+        .contact-form .submit-btn, 
+        .contact-form .reset-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .contact-form .submit-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .contact-form .reset-btn {
+            margin-top: 10px;
+            background-color: #e74c3c;
+        }
+
+        .contact-form .reset-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">7 Wonders</div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+            <li><a href="Contact Us.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+            <li><a href="About Us.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        </ul>
+    </nav>
+    <center>
+        <div class="container">
+            <h1><u>Contact Us</u></h1>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name"><b>Full Name</b></label>
+                    <input type="text" id="name" name="name" required >
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Contact Number</b></label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        required 
+                        pattern="[0-9]{10}" 
+                        placeholder="Enter 10-digit number" 
+                        inputmode="numeric" 
+                        maxlength="10" 
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '');" 
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback"><b>Your Feedback</b></label>
+                    <textarea id="feedback" name="feedback" rows="4" required placeholder="Your feedback is valuable for us "></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="method"><b>Preferred Contact Method</b></label>
+                    <select id="method" name="method" required>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="phone">Text message</option>
+                        <option value="none">No Preference</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h2>About Us</h2>
+            <p>Explore the magnificent 7 Wonders of the Modern World and uncover their timeless beauty and history.</p>
+            <p>Join our journey and stay updated with our latest news and updates.</p>
+        </div>
+
+        <div class="footer-links">
+            <center> <h2>Quick Links</h2></center>
+            <ul>
+                <center>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Contact Us.html">Contact</a></li>
+            </center>
+
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@7wonders.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Mumbai Central , Mumbai 08</p>
+            <div class="social-icons">
+                <a href="https://x.com/machupicchupego"><i class="fa-brands fa-twitter">  Twitter</i></a>
+                <a href="https://www.instagram.com/machupicchu/?hl=en"><i class="fa-brands fa-instagram"> Instagram</i></a>
+                <a href="https://www.youtube.com/watch?v=cnMa-Sm9H4k"><i class="fa-brands fa-youtube"> Youtube</i></a>
+            </div>
+        </div>
+        
+        <div class="footer-newsletter">
+            <h2>Shortcuts</h2>
+            <p> <a href="taj.html"><i class="fa-solid fa-arrow-right"></i>TAJ MAHAL</a></p>
+            <p> <a href="colosseum.html"><i class="fa-solid fa-arrow-right"></i>COLOSSEUM</a></p>
+            <p> <a href="gwc.html"><i class="fa-solid fa-arrow-right"></i>GREAT WALL OF CHINA</a></p>
+            <p> <a href="petra.html"><i class="fa-solid fa-arrow-right"></i>PETRA JORDAN</a></p>
+            <p> <a href="christ.html"><i class="fa-solid fa-arrow-right"></i>CHRIST THE REDEEMER</a></p>
+            <p> <a href="machupicchu.html"><i class="fa-solid fa-arrow-right"></i>MACHU PICCHU</a></p>
+            <p> <a href="chichen itza.html"><i class="fa-solid fa-arrow-right"></i>CHICHEN ITZA</a></p>
+        </div>
+    </div><br><hr><br>
+
+    <div class="footer-bottom">
+      <center><p>&copy; 2024 7 Wonders. All Rights Reserved.</p></center>
+    </div>
+</footer>
+</body>
+</html>
